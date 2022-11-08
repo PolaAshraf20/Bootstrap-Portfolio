@@ -1,0 +1,54 @@
+@media screen and (min-width:992px) and (max-width:1550px){
+    .nav-item {
+        position: relative;
+       
+    }
+    
+    .nav-item .nav-link{
+       padding: 1em 0;
+    }
+    .nav-item::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        background-color: #fff;
+        height: 4px;
+        bottom: 10;
+        left: 0;
+        right: 0;
+        transition: all .5s;
+    }
+    
+    .nav-item:hover::after{
+        width: 90%;
+    }
+  
+
+    .dropdown-menu .submenu{
+        top: -10;
+        left: 100%;
+    }
+    .dropdown .drophover{
+        display: none;
+    }
+    
+    .dropdown:hover .drophover{
+        display: block;
+    }
+
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:768px){
+ .w-15{
+    width: 35%;
+ }
+}
+
+@media screen and (min-width:769px) and (max-width:992px){
+    .w-15{
+       width: 25%;
+    }
+   }
+
